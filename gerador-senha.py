@@ -18,7 +18,7 @@ def arquivo(): #Função para criar um arquivo .txt com as senhas (O arquivo vai
 while continuar == '1':    
     valores = string.ascii_letters + string.digits 
     senha = ""
-    numeros = ['1', '2', '3'] 
+    opcoes = ['1', '2', '3'] 
 
     print('''Escolha o tamanho da senha
     [1] - 5 caractéres
@@ -27,7 +27,7 @@ while continuar == '1':
 
     tamanho = str(input('Digite o tamanho da senha: '))
 
-    while tamanho not in numeros:
+    while tamanho not in opcoes:
         tamanho = str(input('Digite um número válido: '))
 
     site = str(input('Site que a senha vai ser usada: '))
@@ -51,7 +51,7 @@ while continuar == '1':
 
     continuar = str(input('Continuar? '))
     
-    while continuar not in numeros[0:2]:
+    while continuar not in opcoes[0:2]:
         continuar = str(input('Digite uma opção válida: '))
         
     print('-=' * 20)
